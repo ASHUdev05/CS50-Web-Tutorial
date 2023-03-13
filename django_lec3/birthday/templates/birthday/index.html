@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Is it my birthday?</title>
+        {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    </head>
+    <body>
+        <div>
+            {% if birthday == 0 %}
+                <h1>YES</h1>
+            {% else %}
+                <h1>NO, {{ birthday.days }} days still remaining!</h1>
+            {% endif %}
+        </div>
+    </body>
+</html>
